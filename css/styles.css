@@ -1,0 +1,107 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  	margin: 0;
+  	font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  	line-height: 1.5;
+  	background-color: #f7f7f7;
+}
+
+/* Cabecera y pie */
+header,
+footer {
+  	background-color: #222;
+  	color: #fff;
+  	padding: 1rem;
+}
+
+header h1 {
+  	margin: 0 0 0.25rem 0;
+}
+
+/* Menú de navegación (asociado a una lista) */
+.menu-principal {
+  	list-style: none;
+  	padding: 0;
+  	margin: 0;
+  	display: flex;
+  	flex-wrap: wrap;
+  	gap: 1rem;
+}
+
+.menu-principal a {
+  	color: #fff;
+  	text-decoration: none;
+  	font-weight: 500;
+}
+
+.menu-principal a:hover {
+  	text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+  	padding: 1rem;
+}
+
+/* Secciones */
+section {
+  	margin-bottom: 2rem;
+}
+
+/* Artículos de cursos */
+article.curso {
+  	border: 1px solid #ddd;
+  	padding: 1rem;
+  	margin-bottom: 1rem;
+  	background-color: #fff;
+  	border-radius: 8px;
+}
+
+/* Lista desordenada con viñetas distintas */
+.lista-ventajas {
+  	list-style-type: square;
+  	padding-left: 1.25rem;
+}
+
+/* Imágenes dentro de figure */
+article figure {
+  	margin: 0 0 0.5rem 0;
+}
+
+article img {
+  	max-width: 100%;
+  	height: auto;
+  	display: block;
+  	border-radius: 6px;
+}
+
+/* Noticias */
+article.noticia {
+  	background-color: #fff;
+  	border-radius: 8px;
+  	border: 1px solid #ddd;
+  	padding: 1rem;
+}
+
+/* Un poco de maquetación para pantallas grandes */
+@media (min-width: 900px) {
+  	#inicio {
+    		display: flex;
+    		gap: 1rem;
+    		align-items: flex-start;
+    		flex-wrap: wrap;
+  	}
+
+  	#inicio .curso {
+    		flex: 1 1 calc(33.333% - 1rem);
+  	}
+
+  	main {
+    		max-width: 1100px;
+    		margin: 0 auto;
+  	}
+}

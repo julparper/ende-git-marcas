@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  	<meta charset="utf-8">
+  	<title>Academia de Música Allegro</title>
+  	<meta name="description" content="Academia de música en Parla. Clases de piano, guitarra y violín para todos los niveles.">
+  	<meta name="author" content="Tu nombre">
+  	<link rel="stylesheet" href="../css/styles.css">
+
+  	<!-- Ejemplo de CSS interno (internal) -->
+  	<style>
+    		/* Selector de identificador */
+   		 #inicio p.intro {
+      			font-style: italic;
+    		}
+
+    		/* Un pequeño detalle para la sección de noticias */
+    		#noticias {
+      			border-top: 2px solid #ccc;
+      			padding-top: 1rem;
+      			margin-top: 2rem;
+    		}
+  	</style>
+</head>
+<body>
+ 	<header>
+    		<h1>Academia de Música Allegro</h1>
+    		<!-- Ejemplo de CSS inline -->
+    		<p style="margin-top: 0.25rem;">Aprende música desde cero o mejora tu técnica con profesorado especializado.</p>
+
+    		<!-- Menú de navegación (lista en la parte superior) -->
+    		<nav aria-label="Navegación principal">
+      		<ul class="menu-principal">
+        		<li><a href="index.html">Inicio</a></li>
+        		<li><a href="info.html">Información</a></li>
+        		<!-- Este enlace puede ser para una futura página de contacto -->
+        		<li><a href="#noticias">Noticias</a></li>
+        		<!-- Enlace externo -->
+        		<li><a href="https://www.youtube.com/watch?v=n_lqtqsXzkM&list=RDqrHFg47Mopk&index=10" target="_blank" rel="noopener">EnlExterno</a></li>
+      		</ul>
+    		</nav>
+  	</header>
+
+  	<main>
+    		<!-- Sección principal con tres artículos -->
+    		<section id="inicio">
+      			<h2>Bienvenido a la Academia de Música Allegro</h2>
+      			<p class="intro">
+        			En nuestra academia encontrarás cursos de <strong>piano</strong>, <strong>guitarra</strong> y <strong>violín</strong>
+        			adaptados a diferentes niveles y edades.
+      			</p>
+
+      			<!-- ARTÍCULO 1: PIANO (lista ordenada con numeración cambiada) -->
+      			<article class="curso">
+        			<h3>Curso de Iniciación al Piano</h3>
+
+        			<figure>
+          				<img src="../img/piano.png" alt="Alumno tocando el piano en clase">
+          				<figcaption>Primer contacto con el teclado y lectura básica.</figcaption>
+        			</figure>
+
+        			<p>Este curso está pensado para quienes empiezan desde cero.</p>
+
+        			<!-- Lista ordenada con numeración romana que empieza en III -->
+        			<ol type="I" start="3">
+          				<li>Postura y técnica de manos</li>
+          				<li>Lectura de notas en clave de sol</li>
+          				<li>Primeras piezas para recital</li>
+        			</ol>
+
+        			<footer>
+          				<p>Duración: <strong>9 meses</strong> · Nivel: <strong>Inicial</strong></p>
+        			</footer>
+      			</article>
+
+      			<!-- ARTÍCULO 2: GUITARRA (lista desordenada con viñeta distinta) -->
+      			<article class="curso">
+        			<h3>Guitarra Moderna</h3>
+
+        			<figure>
+          				<img src="../img/guitarra.jpg" alt="Guitarrista tocando en un escenario pequeño">
+          				<figcaption>Clases de guitarra eléctrica y acústica.</figcaption>
+        			</figure>
+
+        			<p>Ideal para quienes quieren acompañar canciones o tocar en grupo.</p>
+
+        			<!-- Lista desordenada con viñetas personalizadas mediante CSS -->
+        			<ul class="lista-ventajas">
+          				<li>Grupos reducidos (máximo 6 alumnos)</li>
+          				<li>Trabajo de ritmo y acompañamiento</li>
+          				<li>Posibilidad de tocar en combo/banda de la academia</li>
+        			</ul>
+
+        			<footer>
+          				<p>Duración: <strong>9 meses</strong> · Nivel: <strong>Inicial / Medio</strong></p>
+        			</footer>
+      			</article>
+
+      			<!-- ARTÍCULO 3: VIOLÍN (lista de definición) -->
+      			<article class="curso">
+        			<h3>Violín y Cuerda Clásica</h3>
+
+        			<figure>
+          				<img src="../img/violin.jpg" alt="Violín apoyado sobre un atril">
+          				<figcaption>Técnica clásica aplicada a repertorio orquestal.</figcaption>
+        			</figure>
+
+        			<p>Curso centrado en la afinación, el sonido y el trabajo en conjunto.</p>
+
+        			<!-- Lista de definición -->
+        			<dl>
+          				<dt>Lectura a primera vista</dt>
+          				<dd>Ejercicios diarios de lectura rítmica y melódica.</dd>
+
+          				<dt>Trabajo de afinación</dt>
+          				<dd>Uso del oído relativo y ejercicios con afinador.</dd>
+
+          				<dt>Repertorio</dt>
+          				<dd>Piezas de <em>Bach</em>, <em>Vivaldi</em> y otros compositores.</dd>
+        			</dl>
+
+        			<footer>
+          				<p>Duración: <strong>9 meses</strong> · Nivel: <strong>Medio</strong></p>
+        			</footer>
+      			</article>
+    		</section>
+
+    		<!-- Otra sección para completar el index -->
+    		<section id="noticias">
+      			<h2>Noticias y eventos</h2>
+
+      			<article class="noticia">
+        		<h3>Audición de Invierno</h3>
+        		<p>
+          			La próxima audición será el
+          			<time datetime="2025-12-20">20 de diciembre de 2025</time>.
+        		</p>
+        		<p>
+          			Más detalles en la página de
+          			<a href="info.html#audicion">Información general</a>.
+        		</p>
+      			</article>
+    		</section>
+  	</main>
+
+  	<footer>
+    		<p>&copy; 2025 Academia de Música Allegro · Parla</p>
+    		<p><small>Web creada para la práctica de Lenguaje de Marcas.</small></p>
+  	</footer>
+</body>
+</html>
